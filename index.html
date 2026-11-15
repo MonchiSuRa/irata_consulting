@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.className+=' js'</script>
+
+<title>IRATA Consulting — Datos y gestión para negocios con ganas de crecer</title>
+<meta name="description" content="Consultora boutique de data analytics y gestión para emprendedores, pymes y negocios en crecimiento. Ordenamos procesos, entendemos tus números y conocemos a tus clientes. De datos a decisiones reales.">
+<meta name="author" content="IRATA Consulting">
+<meta name="theme-color" content="#FBF5EC">
+<link rel="canonical" href="https://irata.consulting/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_LA">
+<meta property="og:site_name" content="IRATA Consulting">
+<meta property="og:title" content="IRATA Consulting — ¿Cuánto ganas de verdad?">
+<meta property="og:description" content="Data analytics y gestión para negocios que ya venden y quieren crecer con claridad. De datos a decisiones reales.">
+<meta property="og:url" content="https://irata.consulting/">
+<meta property="og:image" content="https://irata.consulting/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<!-- ═══ CONFIGURACIÓN (edita solo esto; ver README.md) ═══ -->
+<script>
+window.IRATA_CONFIG = {
+  email: "hola@irata.consulting",   // correo de contacto
+  whatsapp: "",                      // ej: "573001234567" (código país + número, sin + ni espacios). Vacío = oculto
+  linkedin: "",                      // URL completa de LinkedIn. Vacío = oculto
+  instagram: "",                     // URL completa de Instagram. Vacío = oculto
+  formEndpoint: ""                   // URL de Formspree/Getform/etc. Vacío = abre el correo del visitante
+};
+</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"IRATA Consulting","description":"Consultora boutique de data analytics y gestión para emprendedores, pymes y negocios en crecimiento.","url":"https://irata.consulting","slogan":"De datos a decisiones reales","areaServed":"Latinoamérica","image":"https://irata.consulting/assets/img/og-image.jpg","founder":{"@type":"Person","name":"Ramón Beroes Pérez"},"serviceType":["Consultoría de gestión","Data analytics y BI","Optimización de procesos","Analítica de clientes","Automatización"]}
+</script>
+</head>
+
+<body>
+<!-- Íconos (sprite) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M6 17L17 6M8 6h9v9"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 12a8 8 0 01-11.6 7.1L4 20l1-4.1A8 8 0 1120 12z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.5v.01M12 17v-6M12 13.5a2.5 2.5 0 015 0V17"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M6 20v-6M12 20V6M18 20v-9"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ═════════════ NAV ═════════════ -->
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand-lock" href="#inicio" aria-label="IRATA Consulting — inicio">
+      <span class="brand">
+        <picture>
+          <source type="image/webp" srcset="assets/img/isotipo-claro-marca-128.webp 128w, assets/img/isotipo-claro-marca-256.webp 256w, assets/img/isotipo-claro-marca-384.webp 384w" sizes="52px">
+          <img src="assets/img/isotipo-claro-marca-256.webp" width="256" height="256" alt="" decoding="async">
+        </picture>
+      </span>
+      <span class="word"><img src="assets/img/wordmark-ink-360.webp" srcset="assets/img/wordmark-ink-240.webp 240w, assets/img/wordmark-ink-360.webp 360w, assets/img/wordmark-ink-480.webp 480w, assets/img/wordmark-ink-636.webp 636w" sizes="120px" width="636" height="247" alt="IRATA Consulting" decoding="async"></span>
+    </a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#para-quien">Para quién</a>
+      <a href="#data">Data</a>
+      <a href="#metodo">Método</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#recursos">Recursos</a>
+    </nav>
+    <a class="btn btn--ink btn--sm" href="#contacto">Hablemos <svg class="i"><use href="#i-arrow"/></svg></a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="drawer"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="drawer" id="drawer" aria-label="Menú móvil">
+  <a href="#servicios">Servicios</a>
+  <a href="#para-quien">Para quién</a>
+  <a href="#data">Data</a>
+  <a href="#metodo">Método</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#recursos">Recursos</a>
+  <a class="btn btn--lime" href="#contacto">Hablemos de tu negocio</a>
+</nav>
+
+<main id="main">
+
+<!-- ═════════════ HERO ═════════════ -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rv">Data analytics y gestión · para negocios con ganas</p>
+      <h1 class="h-xl rv" style="--d:.05s">Vendes mucho. Trabajas más. ¿Pero cuánto ganas <em>de verdad?<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#12C4F0"/><stop offset=".5" stop-color="#0B6BF0"/><stop offset="1" stop-color="#8B35F0"/></linearGradient></defs><path d="M3 14c25-12 45 8 72-2s48-8 74 0 50-10 76-2 50 6 72-4" fill="none" stroke="url(#g1)" stroke-width="5" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg></em></h1>
+      <p class="lead rv" style="--d:.12s">Somos IRATA. Usamos datos, procesos y tecnología para que emprendedores y pymes ordenen su operación, entiendan sus números y conozcan a sus clientes. Para crecer con claridad, sin trajes ni jerga.</p>
+      <div class="hero-cta rv" style="--d:.18s">
+        <a class="btn btn--ink" href="#autodiagnostico">Haz el autodiagnóstico (1 min) <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn" href="#contacto">Hablemos de tu negocio</a>
+      </div>
+      <ul class="hero-ticks rv" style="--d:.24s">
+        <li><svg class="i"><use href="#i-check"/></svg> Primera conversación sin compromiso</li>
+        <li><svg class="i"><use href="#i-check"/></svg> Diagnóstico de alcance cerrado</li>
+        <li><svg class="i"><use href="#i-check"/></svg> Hablamos de tu negocio, no de software</li>
+      </ul>
+    </div>
+
+    <div class="hero-art rv" style="--d:.15s">
+      <p class="note" aria-hidden="true">así empieza todo
+        <svg viewBox="0 0 54 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M3 5c20-4 40 6 44 28M47 33l-8-7M47 33l-9 3"/></svg>
+      </p>
+      <div class="iso-card">
+        <picture>
+          <source type="image/webp" srcset="assets/img/isotipo-claro-512.webp 512w, assets/img/isotipo-claro-1024.webp 1024w, assets/img/isotipo-claro-1536.webp 1536w, assets/img/isotipo-claro-2048.webp 2048w" sizes="(max-width:1060px) 440px, 540px">
+          <img src="assets/img/isotipo-claro-original.jpg" width="2048" height="2048" alt="Isotipo de IRATA: un anillo azul y violeta que abraza tres barras ascendentes" fetchpriority="high" decoding="async">
+        </picture>
+      </div>
+      <span class="chip chip--a">ventas <svg class="i"><use href="#i-up"/></svg></span>
+      <span class="chip chip--b">clientes que vuelven</span>
+      <span class="chip chip--c">margen real <svg class="i"><use href="#i-bars"/></svg></span>
+      <span class="chip chip--d">procesos claros</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ MARQUEE (frases de dueños) ═════════════ -->
+<div class="band-wrap"><div class="band" aria-label="Frases típicas de dueños de negocio">
+  <div class="band-track">
+    <ul class="band-set">
+      <li><em>“</em>Todo depende de mí.</li>
+      <li>Vendo harto, pero no sé si gano.</li>
+      <li>Tengo todo en Excel (y en la cabeza).</li>
+      <li>Mi equipo trabaja un montón y aun así hay desorden.</li>
+      <li>Tengo clientes, pero no vuelven.</li>
+      <li>Quiero abrir otra sede… ¿estaré listo?</li>
+      <li>El inventario lo sé “más o menos”.</li>
+    </ul>
+    <ul class="band-set" aria-hidden="true">
+      <li><em>“</em>Todo depende de mí.</li>
+      <li>Vendo harto, pero no sé si gano.</li>
+      <li>Tengo todo en Excel (y en la cabeza).</li>
+      <li>Mi equipo trabaja un montón y aun así hay desorden.</li>
+      <li>Tengo clientes, pero no vuelven.</li>
+      <li>Quiero abrir otra sede… ¿estaré listo?</li>
+      <li>El inventario lo sé “más o menos”.</li>
+    </ul>
+  </div>
+</div></div>
+
+<!-- ═════════════ PROPUESTA ═════════════ -->
+<section class="sec" id="propuesta">
+  <div class="wrap">
+    <p class="eyebrow rv">Si alguna te sonó, sigue leyendo</p>
+    <h2 class="stmt rv">Tu negocio tiene <span class="pill p1">potencial</span>. Te ayudamos a <span class="pill p2">ordenarlo</span>, <span class="pill p3">entenderlo</span> y hacerlo <span class="pill p4">crecer</span>.</h2>
+
+    <div class="prop-grid">
+      <article class="card prop-card rv">
+        <span class="prop-num">01</span>
+        <h3>Ordenar</h3>
+        <p>Procesos, roles y números en su sitio. Que el negocio no dependa de tu memoria ni de que tú estés en todo.</p>
+      </article>
+      <article class="card prop-card rv" style="--d:.08s">
+        <span class="prop-num">02</span>
+        <h3>Entender</h3>
+        <p>Qué productos dejan margen, qué clientes vuelven, dónde se te va el tiempo. Los datos, traducidos a tu idioma.</p>
+      </article>
+      <article class="card prop-card rv" style="--d:.16s">
+        <span class="prop-num">03</span>
+        <h3>Crecer</h3>
+        <p>Decidir con información: abrir esa sede, contratar o lanzar un canal sin cruzar los dedos.</p>
+      </article>
+    </div>
+
+    <div class="quote-block rv">
+      <span class="q" aria-hidden="true">“</span>
+      <div>
+        <h3>¿Tu negocio crece, pero la gestión no?</h3>
+        <p>Las ventas aumentan, las tareas se acumulan y cada decisión parece depender de ti. No siempre sabes qué producto deja más margen, dónde se pierde tiempo, qué clientes vuelven o qué proceso necesita cambiar. Crecer sin control hace que el negocio sea más complejo y menos rentable. Eso se arregla, y no necesitas una estructura corporativa para lograrlo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ SERVICIOS ═════════════ -->
+<section class="sec s-services" id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Servicios</p>
+      <h2 class="h-lg rv">¿Qué te quita el <em>sueño?</em></h2>
+      <p class="lead rv">Escoge tu síntoma y te contamos qué hacemos con él. Seis frentes conectados: nosotros partimos del problema de tu negocio, no de la herramienta.</p>
+    </div>
+
+    <div class="tabs">
+      <div class="tablist rv" role="tablist" aria-label="Síntomas del negocio" aria-orientation="vertical">
+        <button class="tab" role="tab" id="t-orden" aria-controls="p-orden" aria-selected="true" data-area="orden"><b>01</b><span>“No sé si realmente gano dinero.”</span></button>
+        <button class="tab" role="tab" id="t-procesos" aria-controls="p-procesos" aria-selected="false" tabindex="-1" data-area="procesos"><b>02</b><span>“Todo depende de mí.”</span></button>
+        <button class="tab" role="tab" id="t-ventas" aria-controls="p-ventas" aria-selected="false" tabindex="-1" data-area="ventas"><b>03</b><span>“Vendo, pero no sé qué funciona.”</span></button>
+        <button class="tab" role="tab" id="t-datos" aria-controls="p-datos" aria-selected="false" tabindex="-1" data-area="datos"><b>04</b><span>“Mi información está en Excel, el POS y mi cabeza.”</span></button>
+        <button class="tab" role="tab" id="t-clientes" aria-controls="p-clientes" aria-selected="false" tabindex="-1" data-area="clientes"><b>05</b><span>“Tengo clientes, pero no vuelven.”</span></button>
+        <button class="tab" role="tab" id="t-tecnologia" aria-controls="p-tecnologia" aria-selected="false" tabindex="-1" data-area="tecnologia"><b>06</b><span>“Todo es manual y repetitivo.”</span></button>
+      </div>
+
+      <div class="panels rv" style="--d:.1s">
+        <!-- 01 -->
+        <section class="card panel on" role="tabpanel" id="p-orden" aria-labelledby="t-orden">
+          <span class="tag">Orden y estrategia del negocio</span>
+          <h3>Entiende tus costos, márgenes y rentabilidad antes de crecer.</h3>
+          <p class="res">Resultado: saber dónde estás parado y qué corregir primero.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Diagnóstico integral: modelo comercial, operación, clientes y datos.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Rentabilidad por producto, servicio, canal o sede.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Objetivos, prioridades y un plan de acción realista.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Preparación para abrir sede, canal o contratar.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Diagnóstico ejecutivo + mapa de oportunidades</li><li>Plan 30/60/90 días</li><li>Tablero gerencial con indicadores clave</li></ul>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Business Check</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="orden">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+        <!-- 02 -->
+        <section class="card panel" role="tabpanel" id="p-procesos" aria-labelledby="t-procesos">
+          <span class="tag">Procesos y eficiencia operativa</span>
+          <h3>Ordena la operación y recupera tiempo para dirigir.</h3>
+          <p class="res">Resultado: procesos claros, menos reprocesos y un negocio que no se cae si tú no estás.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Levantamos cómo funciona hoy tu operación (AS-IS).</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Detectamos cuellos de botella, reprocesos y tareas duplicadas.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Rediseñamos el proceso (TO-BE), roles y responsables.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>SOPs y checklists que sí se usan, no que se quedan en un cajón.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Mapa y fichas de proceso</li><li>Flujogramas hoy / mañana + matriz RACI</li><li>Plan de eficiencia priorizado</li></ul>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Process Optimization</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="procesos">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+        <!-- 03 -->
+        <section class="card panel" role="tabpanel" id="p-ventas" aria-labelledby="t-ventas">
+          <span class="tag">Ventas y rentabilidad</span>
+          <h3>Identifica qué productos, canales y clientes impulsan tus resultados.</h3>
+          <p class="res">Resultado: gestionar las ventas con criterio y mejorar la productividad comercial.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Ventas por producto, canal, sede y vendedor.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Ticket promedio, frecuencia de compra, margen y mix.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Embudo comercial: del prospecto a la recompra.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Descuentos, promociones y comisiones sin perder margen.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Tablero comercial simple</li><li>Metas y plan comercial</li><li>Lectura clara de qué mueve la aguja</li></ul>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Sales Growth</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="ventas">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+        <!-- 04 -->
+        <section class="card panel" role="tabpanel" id="p-datos" aria-labelledby="t-datos">
+          <span class="tag">Data, BI y control de gestión</span>
+          <h3>Conecta tu información y conviértela en una visión útil del negocio.</h3>
+          <p class="res">Resultado: más control del desempeño y decisiones con números, no con corazonadas.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Ordenamos tus fuentes: Excel, POS, e-commerce, CRM, ERP.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Definimos los pocos KPIs que importan (y qué significa cada uno).</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Dashboards y reportes que se actualizan solos.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Te enseñamos a leerlos y usarlos cada semana.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Tablero de control + rutina de seguimiento</li><li>Diccionario de KPIs</li><li>Reportes automatizados</li></ul>
+          <p class="callout">Si Excel te alcanza, no te vendemos una plataforma. A veces una plantilla bien diseñada y una rutina constante resuelven.</p>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Business Control</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="datos">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+        <!-- 05 -->
+        <section class="card panel" role="tabpanel" id="p-clientes" aria-labelledby="t-clientes">
+          <span class="tag">Clientes, segmentación y experiencia</span>
+          <h3>Conoce y segmenta a tus clientes para que vuelvan más.</h3>
+          <p class="res">Resultado: relaciones más relevantes, más recurrencia y menos tratar a todos igual.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Limpiamos y consolidamos tu base de clientes, con datos tratados de forma responsable.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Segmentos accionables: nuevos, frecuentes, de alto valor, inactivos, en riesgo.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>RFM y cohortes cuando hay datos suficientes.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Mapa de experiencia: dónde se fricciona la compra.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Segmentos y perfiles de clientes</li><li>Plan de recompra y recuperación</li><li>Indicadores de retención</li></ul>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Customer Intelligence</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="clientes">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+        <!-- 06 -->
+        <section class="card panel" role="tabpanel" id="p-tecnologia" aria-labelledby="t-tecnologia">
+          <span class="tag">Tecnología y automatización</span>
+          <h3>Ahorra tiempo y reduce errores sin complicarte la vida.</h3>
+          <p class="res">Resultado: menos tareas manuales y herramientas que por fin se hablan entre sí.</p>
+          <h4>Qué revisamos y hacemos</h4>
+          <ul class="checks">
+            <li><svg class="i"><use href="#i-check"/></svg>Mapa de tareas repetitivas y de herramientas desconectadas.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Automatizaciones e integraciones: formularios, hojas, CRM, POS.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>Apps internas y MVPs para validar antes de invertir en grande.</li>
+            <li><svg class="i"><use href="#i-check"/></svg>IA aplicada a tareas administrativas, cuando tiene sentido.</li>
+          </ul>
+          <h4>Te entregamos</h4>
+          <ul class="deliv"><li>Automatizaciones funcionando</li><li>Herramientas elegidas según tu presupuesto</li><li>Documentación y capacitación</li></ul>
+          <div class="foot"><p class="pack">Paquete<b>IRATA Digital Efficiency</b></p><a class="btn btn--ink btn--sm" href="#contacto" data-pre="tecnologia">Quiero resolver esto <svg class="i"><use href="#i-arrow"/></svg></a></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ PARA QUIÉN ═════════════ -->
+<section class="sec" id="para-quien">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">A quién ayudamos</p>
+      <h2 class="h-lg rv">Para negocios que quieren dar <em>el siguiente paso.</em></h2>
+      <p class="lead rv">No somos una consultora para directores de grandes corporaciones. Trabajamos con negocios que ya están en marcha y necesitan estructura para crecer sin perder agilidad.</p>
+    </div>
+
+    <div class="seg-grid">
+      <article class="seg rv"><h3>Emprendedor en consolidación</h3><p>Ya vendes, validas tu oferta y haces casi todo tú.</p><small>Ordenar prioridades, costos y clientes</small></article>
+      <article class="seg rv" style="--d:.06s"><h3>Microempresa o pequeño negocio</h3><p>Equipo reducido, registros dispersos y procesos “de memoria”.</p><small>Control de ventas, inventario, caja y tareas</small></article>
+      <article class="seg rv" style="--d:.12s"><h3>Pyme en crecimiento</h3><p>Más ventas, más gente o más sedes… y la gestión no escala igual.</p><small>Estandarizar, delegar, medir</small></article>
+      <article class="seg rv"><h3>Negocio digital o e-commerce</h3><p>Canales, campañas y transacciones, pero rentabilidad y clientes por descifrar.</p><small>Embudo, recurrencia y adquisición</small></article>
+      <article class="seg rv" style="--d:.06s"><h3>Empresa familiar o tradicional</h3><p>El conocimiento vive en la cabeza del dueño y casi nada está documentado.</p><small>Profesionalizar sin perder agilidad</small></article>
+    </div>
+
+    <ul class="sectors rv" aria-label="Sectores">
+      <span>Sectores de entrada</span>
+      <li>Comercio y tiendas</li><li>Restaurantes y cafeterías</li><li>E-commerce</li><li>Servicios profesionales y B2B</li><li>Belleza y bienestar</li><li>Logística y distribución</li><li>Educación privada</li><li>Varias sedes o equipos comerciales</li>
+    </ul>
+
+    <div class="fit">
+      <div class="card yes rv">
+        <h3>Seremos buena pareja si…</h3>
+        <ul>
+          <li><svg class="i"><use href="#i-check"/></svg>Ya vendes algo, o tienes una oportunidad comercial razonablemente validada.</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Quieres crecer, contratar, abrir otro canal o mejorar márgenes.</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Sientes que ya no puedes gestionarlo todo de memoria o por intuición.</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Estás dispuesto a compartir información y a meterte en la implementación.</li>
+          <li><svg class="i"><use href="#i-check"/></svg>Puedes invertir en mejorar, aunque sea por etapas.</li>
+        </ul>
+      </div>
+      <div class="card no rv" style="--d:.1s">
+        <h3>Mejor no, si…</h3>
+        <ul>
+          <li><svg class="i"><use href="#i-x"/></svg>Esperas garantías de ventas sin cambiar nada.</li>
+          <li><svg class="i"><use href="#i-x"/></svg>Buscas solo el precio más bajo y no valoras el diagnóstico.</li>
+          <li><svg class="i"><use href="#i-x"/></svg>No tienes tiempo ni ganas de decidir o ejecutar mejoras.</li>
+          <li><svg class="i"><use href="#i-x"/></svg>Quieres “una app” sin saber qué problema resuelve.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ DATA / TECH ═════════════ -->
+<section class="sec s-data" id="data">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Lo tech, sin la jerga</p>
+      <h2 class="h-lg rv">Somos de datos. <em>Y hablamos humano.</em></h2>
+      <p class="lead rv">Detrás de cada recomendación hay SQL, modelos y dashboards. Pero a ti te llega lo que importa: qué está pasando y qué hacer. Juega con este mini tablero de ejemplo.</p>
+    </div>
+
+    <div class="data-grid">
+      <div class="dash card rv" aria-label="Mini tablero interactivo de ejemplo">
+        <div class="dash-bar"><i></i><i></i><i></i><span>tablero-ejemplo · irata</span><em class="demo">Datos de ejemplo</em></div>
+        <div class="dash-tabs" role="tablist" aria-label="Vista del tablero">
+          <button role="tab" aria-selected="true" data-view="ventas">Ventas vs. utilidad</button>
+          <button role="tab" aria-selected="false" tabindex="-1" data-view="clientes">Clientes que vuelven</button>
+          <button role="tab" aria-selected="false" tabindex="-1" data-view="tiempo">Dónde se va el tiempo</button>
+        </div>
+        <div class="kpis" id="kpis" aria-live="polite"></div>
+        <div class="chart" id="chart" role="img" aria-label="Gráfico de ejemplo"></div>
+        <p class="insight" id="insight"></p>
+      </div>
+
+      <div class="stack-col">
+        <div class="code card rv" style="--d:.08s">
+          <div class="code-bar"><i></i><i></i><i></i><span>segmentacion_rfm.sql</span></div>
+<pre aria-label="Ejemplo de consulta SQL para segmentar clientes por recencia, frecuencia y valor"><code><span class="c">-- ¿Quiénes son tus mejores clientes?</span>
+<span class="k">SELECT</span> cliente_id,
+       <span class="k">DATEDIFF</span>(day, <span class="k">MAX</span>(fecha),
+                <span class="k">CURRENT_DATE</span>) <span class="k">AS</span> recencia,
+       <span class="k">COUNT</span>(*)   <span class="k">AS</span> frecuencia,
+       <span class="k">SUM</span>(valor) <span class="k">AS</span> valor_total
+<span class="k">FROM</span>   ventas
+<span class="k">GROUP BY</span> cliente_id;</code></pre>
+          <p class="code-cap">Así se ve por dentro una segmentación RFM. Tú recibes los segmentos y qué hacer con cada uno.</p>
+        </div>
+
+        <div class="card stack rv" style="--d:.14s">
+          <h3>Con qué trabajamos</h3>
+          <ul class="tags">
+            <li>SQL</li><li>Amazon Redshift</li><li>Power BI</li><li>Tableau</li><li>Excel y hojas de cálculo</li><li>Integración con Salesforce y CRM</li><li>Automatización y APIs</li><li>IA aplicada</li>
+          </ul>
+          <p>Elegimos herramientas según tu presupuesto y madurez. La mejor es la que tu equipo va a usar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ MÉTODO ═════════════ -->
+<section class="sec s-method on-dark" id="metodo">
+  <div class="iso-dark" aria-hidden="true">
+    <picture>
+      <source type="image/webp" srcset="assets/img/isotipo-oscuro-512.webp 512w, assets/img/isotipo-oscuro-1024.webp 1024w, assets/img/isotipo-oscuro-1536.webp 1536w, assets/img/isotipo-oscuro-2048.webp 2048w" sizes="(max-width:1060px) 90vw, 640px">
+      <img src="assets/img/isotipo-oscuro-original.jpg" width="2048" height="2048" alt="" loading="lazy" decoding="async">
+    </picture>
+  </div>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Cómo trabajamos</p>
+      <h2 class="h-lg rv">Sin casarnos <em>el primer día.</em></h2>
+      <p class="lead rv">No recibes un informe aislado: recibes un plan y acompañamiento. Seis pasos claros, y tú decides hasta dónde llegar.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step rv"><b>01</b><h3>Entender</h3><p>Conversamos contigo y conocemos tu modelo, objetivos y problemas.</p></li>
+      <li class="step rv" style="--d:.05s"><b>02</b><h3>Diagnosticar</h3><p>Revisamos números, clientes, procesos, recursos y herramientas.</p></li>
+      <li class="step rv" style="--d:.1s"><b>03</b><h3>Priorizar</h3><p>Elegimos por impacto, esfuerzo, costo y urgencia. Un plan enfocado, no una lista infinita.</p></li>
+      <li class="step rv"><b>04</b><h3>Diseñar</h3><p>Definimos procesos, indicadores, roles, acciones y herramientas.</p></li>
+      <li class="step rv" style="--d:.05s"><b>05</b><h3>Implementar</h3><p>Te acompañamos en cambios, automatizaciones, tableros y capacitación.</p></li>
+      <li class="step rv" style="--d:.1s"><b>06</b><h3>Medir y escalar</h3><p>Revisamos adopción y resultados, y preparamos lo que sigue.</p></li>
+    </ol>
+
+    <div class="ladder-wrap">
+      <div class="rv">
+        <h3>Empieza chiquito. Crece cuando tenga sentido.</h3>
+        <p>Cada peldaño es una decisión tuya. Reducimos alcance, nunca calidad, para que la puerta de entrada sea accesible y el rigor se mantenga.</p>
+      </div>
+      <div class="ladder rv" style="--d:.1s" role="list">
+        <div class="rung" role="listitem"><i>1 · Entrada</i><b>Business Check</b><span>Diagnóstico de alcance cerrado</span></div>
+        <div class="rung" role="listitem"><i>2 · Proyecto</i><b>Un problema, resuelto</b><span>Control, procesos, ventas, clientes o automatización</span></div>
+        <div class="rung" role="listitem"><i>3 · Integral</i><b>Plan por fases</b><span>Varias áreas conectadas</span></div>
+        <div class="rung" role="listitem"><i>4 · Continuidad</i><b>Growth Partner</b><span>Acompañamiento mensual</span></div>
+      </div>
+    </div>
+
+    <div class="note-check rv">
+      <h3>Tu puerta de entrada: el IRATA Business Check.</h3>
+      <p>Una reunión contigo, revisión de la información que tengas, entrevistas breves y observación de procesos clave. Calculamos de 2 a 3 semanas según acceso y complejidad. Cierras con una sesión de devolución, diagnóstico ejecutivo, oportunidades priorizadas y un plan 30/60/90 días.</p>
+      <a class="btn btn--lime" href="#contacto" data-pre="orden">Quiero un Business Check <svg class="i"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ AUTODIAGNÓSTICO ═════════════ -->
+<section class="sec s-quiz" id="autodiagnostico">
+  <div class="wrap quiz-grid">
+    <div>
+      <p class="eyebrow rv">Autodiagnóstico</p>
+      <h2 class="h-lg rv">¿Está tu negocio listo <em>para crecer?</em></h2>
+      <p class="lead rv">Siete preguntas, un minuto, cero compromiso. Te decimos dónde estás y cuál es tu punto más flojo.</p>
+      <ul class="quiz-meta rv"><li>7 preguntas</li><li>~1 minuto</li><li>Sin registro</li></ul>
+    </div>
+    <div class="card quiz rv" id="quiz" style="--d:.1s" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ═════════════ NOSOTROS ═════════════ -->
+<section class="sec" id="nosotros">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Quién está detrás</p>
+      <h2 class="h-lg rv">Alguien que ha vivido la operación, <em>no solo mirado el Excel.</em></h2>
+    </div>
+
+    <div class="about">
+      <aside class="card founder rv">
+        <div class="founder-photo">
+          <span class="mono" aria-hidden="true">RB</span>
+          <img src="assets/img/ramon.jpg" alt="Ramón Beroes Pérez, fundador de IRATA Consulting" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+        <div class="founder-body">
+          <h3>Ramón Beroes Pérez</h3>
+          <p class="role">Fundador y consultor principal</p>
+          <ul class="tags"><li>SQL</li><li>Redshift</li><li>Power BI</li><li>Tableau</li><li>BI</li><li>CX</li><li>Producto</li><li>IA aplicada</li></ul>
+          <p class="founder-note">Formación en Publicidad (TSU). +10 años conectando negocio, datos y tecnología.</p>
+        </div>
+      </aside>
+
+      <div class="story rv" style="--d:.08s">
+        <p>Soy Ramón. Llevo más de diez años metido en datos, experiencia de cliente, producto y operaciones: de coordinar equipos comerciales en varios países a diseñar analítica corporativa de clientes.</p>
+        <p>Aprendí que <strong>casi nunca falta información: falta alguien que la traduzca a decisiones</strong>. Y que no necesitas ser una multinacional para trabajar con criterio. Por eso creé IRATA: para llevar esa experiencia a negocios que quieren crecer, con un alcance y un ritmo que tengan sentido para su tamaño.</p>
+
+        <ol class="chapters">
+          <li><div><b>Ventas y campañas</b><span>Coordinación comercial regional: qué mueve (y qué frena) una venta, y cómo se lidera un equipo.</span></div></li>
+          <li><div><b>Experiencia de cliente y BI</b><span>Información confiable y automatizada para equipos de CX en la región.</span></div></li>
+          <li><div><b>Prevención de fraude</b><span>Equilibrar control y conversión: proteger el negocio sin espantar al cliente.</span></div></li>
+          <li><div><b>Performance regional y e-commerce</b><span>KPIs y OKRs, calidad, forecasting de equipos y reportería automatizada.</span></div></li>
+          <li><div><b>Analítica corporativa de clientes</b><span>Consolidar fuentes, segmentar, gobernar los datos y aplicar IA donde suma.</span></div></li>
+          <li><div><b>Y un negocio de comida</b><span>También me metí en la cocina de un negocio gastronómico: menú, costeo de platos y entender a sus clientes.</span></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="values-head">
+      <p class="eyebrow rv">Lo que no negociamos</p>
+      <h2 class="h-md rv" style="max-width:20ch">Siete valores, cero cartelito en la pared.</h2>
+    </div>
+    <div class="values">
+      <article class="val rv"><h4>Claridad</h4><p>Hacer visible lo que pasa y explicar qué conviene hacer.</p></article>
+      <article class="val rv" style="--d:.04s"><h4>Cercanía</h4><p>Entender tu realidad y adaptar la solución a tu contexto.</p></article>
+      <article class="val rv" style="--d:.08s"><h4>Integridad</h4><p>Transparencia en hallazgos, límites, costos y resultados.</p></article>
+      <article class="val rv" style="--d:.12s"><h4>Impacto</h4><p>Mejoras con efecto observable en gestión, eficiencia o crecimiento.</p></article>
+      <article class="val rv"><h4>Practicidad</h4><p>Soluciones aplicables, no documentos que se quedan en un cajón.</p></article>
+      <article class="val rv" style="--d:.04s"><h4>Innovación útil</h4><p>Datos y tecnología cuando generan valor real, no por moda.</p></article>
+      <article class="val rv" style="--d:.08s"><h4>Acompañamiento</h4><p>Transferimos conocimiento para que sostengas las mejoras.</p></article>
+    </div>
+
+    <ul class="principles rv">
+      <li><svg class="i"><use href="#i-arrow"/></svg>Primero entender el negocio; después, las herramientas.</li>
+      <li><svg class="i"><use href="#i-arrow"/></svg>No todo necesita software: a veces el primer cambio es un proceso claro.</li>
+      <li><svg class="i"><use href="#i-arrow"/></svg>Medir lo importante, aunque al inicio haya pocos datos.</li>
+      <li><svg class="i"><use href="#i-arrow"/></svg>Mejorar sin burocratizar ni complicar de más.</li>
+      <li><svg class="i"><use href="#i-arrow"/></svg>Soluciones del tamaño y la madurez de tu negocio.</li>
+      <li><svg class="i"><use href="#i-arrow"/></svg>Lo que implementemos, tú debes poder entenderlo y mantenerlo.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═════════════ RECURSOS ═════════════ -->
+<section class="sec s-res" id="recursos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Recursos</p>
+      <h2 class="h-lg rv">Ideas para dueños <em>con poco tiempo.</em></h2>
+      <p class="lead rv" style="color:var(--ink-2)">Guías cortas, sin relleno, en lenguaje de negocio. Ya está listo el autodiagnóstico; lo demás viene en camino.</p>
+    </div>
+    <div class="res-grid">
+      <a class="rcard rv" href="#autodiagnostico"><span class="st">Disponible</span><h3>¿Está tu negocio preparado para crecer?</h3><p>Autodiagnóstico de gestión con puntuación orientativa.</p><span class="go">Hacerlo ahora <svg class="i"><use href="#i-arrow"/></svg></span></a>
+      <article class="rcard soon rv" style="--d:.05s"><span class="st">Pronto</span><h3>5 señales de que todo depende de ti</h3><p>Y cómo empezar a soltar sin que se caiga nada.</p></article>
+      <article class="rcard soon rv" style="--d:.1s"><span class="st">Pronto</span><h3>Vender no es ganar: la diferencia que sale cara</h3><p>Ventas, margen y utilidad explicados sin tecnicismos.</p></article>
+      <article class="rcard soon rv" style="--d:.15s"><span class="st">Pronto</span><h3>Excel o sistema: ¿cuándo dar el salto?</h3><p>Qué automatizar primero y cuándo necesitas un CRM.</p></article>
+    </div>
+
+    <div class="news rv">
+      <h3>¿Te avisamos cuando salgan?</h3>
+      <form id="news-form" novalidate>
+        <label class="vh" for="news-email">Tu correo</label>
+        <input id="news-email" name="email" type="email" placeholder="tucorreo@negocio.com" autocomplete="email" required>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn--lime" type="submit">Avísame <svg class="i"><use href="#i-arrow"/></svg></button>
+        <p class="msg" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ FAQ ═════════════ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Preguntas frecuentes</p>
+      <h2 class="h-lg rv">Lo que casi todos <em>preguntan.</em></h2>
+    </div>
+    <div class="faq rv">
+      <details><summary>¿Necesito comprar software o cambiar mis herramientas?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>No necesariamente. A veces el primer cambio es un proceso claro o una plantilla bien hecha. Recomendamos herramientas según tu presupuesto y madurez, y priorizamos las que ya tienes.</p></details>
+      <details><summary>¿Y si casi no tengo datos?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>Empezamos con lo que hay y armamos una rutina simple para capturar lo importante. Siempre te decimos con claridad qué limitaciones tienen los datos disponibles.</p></details>
+      <details><summary>¿Cuánto cuesta?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>Depende de la complejidad, las fuentes de datos, las personas involucradas y si quieres solo el diseño o acompañamiento hasta que funcione. Empezamos con un diagnóstico de alcance cerrado y te damos un precio claro antes de arrancar. No competimos por ser los más baratos: ajustamos el alcance, no la calidad.</p></details>
+      <details><summary>¿Cuánto tarda empezar?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>Primero una conversación de unos 30 minutos. Si hay encaje, te enviamos una propuesta por fases con alcance, entregables y plazos. El Business Check lo estimamos entre 2 y 3 semanas, según acceso y complejidad.</p></details>
+      <details><summary>¿Garantizan resultados?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>No prometemos cifras mágicas. Definimos objetivos, indicadores y responsables, y medimos mejoras. Los resultados dependen también de que se implementen los cambios, por eso te acompañamos en eso.</p></details>
+      <details><summary>¿Reemplazan a mi contador o abogado?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>No. Organizamos información de gestión y colaboramos con esos profesionales, cada uno en su cancha. IRATA no sustituye asesoría contable, tributaria, legal ni de auditoría.</p></details>
+      <details><summary>¿Qué hacen con la información de mi negocio?<span class="plus"><svg class="i"><use href="#i-plus"/></svg></span></summary><p>La tratamos con confidencialidad: acuerdos claros, accesos mínimos, almacenamiento seguro y reglas de retención y eliminación. Los datos de clientes se usan con consentimiento y bajo la normativa aplicable.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ═════════════ CONTACTO ═════════════ -->
+<section class="sec s-contact on-dark" id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow rv">Contacto</p>
+      <h2 class="h-lg rv">No tienes que resolverlo <em>todo solo.</em></h2>
+      <p class="lead rv">Cuéntanos de tu negocio y vemos si hay encaje. Empecemos por entenderlo.</p>
+
+      <div class="channels rv">
+        <a class="channel" id="ch-mail" href="mailto:hola@irata.consulting"><span class="ic"><svg class="i"><use href="#i-mail"/></svg></span><span><small>Escríbenos</small><span data-email>hola@irata.consulting</span></span></a>
+        <a class="channel" id="ch-wa" href="#" target="_blank" rel="noopener" hidden><span class="ic"><svg class="i"><use href="#i-chat"/></svg></span><span><small>Respuesta rápida</small>WhatsApp</span></a>
+        <a class="channel" id="ch-in" href="#" target="_blank" rel="noopener" hidden><span class="ic"><svg class="i"><use href="#i-in"/></svg></span><span><small>Síguenos</small>LinkedIn</span></a>
+        <div class="channel"><span class="ic"><svg class="i"><use href="#i-clock"/></svg></span><span><small>Tiempo de respuesta</small>24 a 48 horas hábiles</span></div>
+      </div>
+
+      <div class="next rv">
+        <h3>¿Qué pasa después?</h3>
+        <ol>
+          <li>Leemos tu mensaje y preparamos algunas preguntas.</li>
+          <li>Te contactamos en 24 a 48 horas para agendar una llamada de 30 minutos.</li>
+          <li>Exploramos tu reto y si hay encaje real.</li>
+          <li>Si lo hay, te enviamos una propuesta con alcance y siguiente paso.</li>
+        </ol>
+      </div>
+    </div>
+
+    <form class="card form rv" id="contact-form" style="--d:.1s" novalidate>
+      <h3>Cuéntanos tu reto</h3>
+      <div class="fgrid">
+        <div class="fld"><label for="f-nombre">Tu nombre <i>*</i></label><input id="f-nombre" name="nombre" autocomplete="name" required placeholder="Cómo te llamamos"></div>
+        <div class="fld"><label for="f-negocio">Tu negocio</label><input id="f-negocio" name="negocio" autocomplete="organization" placeholder="Nombre o tipo de negocio"></div>
+        <div class="fld"><label for="f-contacto">Correo o WhatsApp <i>*</i></label><input id="f-contacto" name="contacto" autocomplete="email" required placeholder="Correo o WhatsApp"></div>
+        <div class="fld"><label for="f-sector">Sector</label>
+          <select id="f-sector" name="sector"><option value="">Elige uno</option><option>Comercio / tienda</option><option>Restaurante / cafetería</option><option>E-commerce / marca digital</option><option>Servicios profesionales / B2B</option><option>Belleza, bienestar y servicios personales</option><option>Logística / distribución</option><option>Educación privada / academia</option><option>Otro</option></select></div>
+        <fieldset class="fld full"><legend>¿Con qué te ayudamos?</legend>
+          <div class="pills" id="area-pills">
+            <input type="radio" name="area" id="a-orden" value="Orden y estrategia"><label for="a-orden">Orden y estrategia</label>
+            <input type="radio" name="area" id="a-procesos" value="Procesos y eficiencia"><label for="a-procesos">Procesos</label>
+            <input type="radio" name="area" id="a-ventas" value="Ventas y rentabilidad"><label for="a-ventas">Ventas y rentabilidad</label>
+            <input type="radio" name="area" id="a-datos" value="Datos e indicadores"><label for="a-datos">Datos e indicadores</label>
+            <input type="radio" name="area" id="a-clientes" value="Clientes y relacionamiento"><label for="a-clientes">Clientes</label>
+            <input type="radio" name="area" id="a-tecnologia" value="Tecnología y automatización"><label for="a-tecnologia">Automatización</label>
+            <input type="radio" name="area" id="a-nose" value="No sé, necesito orientación"><label for="a-nose">No sé aún</label>
+          </div>
+        </fieldset>
+        <div class="fld full"><label for="f-reto">¿Qué es lo que más te frena hoy? <i>*</i></label><textarea id="f-reto" name="reto" required placeholder="Cuéntanos en pocas palabras. Sin formalidades."></textarea></div>
+      </div>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <label class="consent"><input type="checkbox" id="f-consent" required><span>Acepto que IRATA Consulting use mis datos para responder esta consulta. Puedo pedir que los eliminen cuando quiera. <a href="privacidad.html" target="_blank" rel="noopener">Política de privacidad</a>.</span></label>
+      <button class="btn btn--ink" type="submit">Enviar mensaje <svg class="i"><use href="#i-arrow"/></svg></button>
+      <p class="small">Sin spam. Sin compromiso. Solo la conversación que tu negocio necesita.</p>
+      <p class="msg" id="form-msg" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ═════════════ FOOTER ═════════════ -->
+<footer class="sitefoot on-dark">
+  <div class="wrap">
+    <a class="logo-banner" href="#inicio" aria-label="IRATA Consulting — De datos a decisiones reales. Volver arriba">
+      <picture>
+        <source type="image/webp" srcset="assets/img/logo-completo-640.webp 640w, assets/img/logo-completo-1288.webp 1288w, assets/img/logo-completo-1932.webp 1932w, assets/img/logo-completo-2576.webp 2576w" sizes="(max-width:1440px) 100vw, 1440px">
+        <img src="assets/img/logo-completo-original.jpg" width="2576" height="639" alt="IRATA Consulting — De datos a decisiones reales" loading="lazy" decoding="async">
+      </picture>
+    </a>
+
+    <div class="foot-grid">
+      <div>
+        <p class="foot-tag">De datos a decisiones reales.</p>
+        <p class="foot-desc">Consultora boutique de gestión, data analytics y transformación para emprendedores, pymes y negocios en crecimiento de Latinoamérica.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul><li><a href="#servicios">Orden y estrategia</a></li><li><a href="#servicios">Procesos</a></li><li><a href="#servicios">Ventas y rentabilidad</a></li><li><a href="#servicios">Data y BI</a></li><li><a href="#servicios">Clientes</a></li><li><a href="#servicios">Automatización</a></li></ul>
+      </div>
+      <div>
+        <h4>IRATA</h4>
+        <ul><li><a href="#para-quien">Para quién</a></li><li><a href="#data">Data</a></li><li><a href="#metodo">Método</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#recursos">Recursos</a></li><li><a href="#faq">Preguntas</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@irata.consulting" data-email>hola@irata.consulting</a></li>
+          <li data-social="linkedin" hidden><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li data-social="instagram" hidden><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#contacto">Escríbenos aquí</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2026 IRATA Consulting. Todos los derechos reservados.</span>
+      <span><a href="privacidad.html">Privacidad</a></span>
+    </div>
+    <p class="legal">IRATA no reemplaza al contador, abogado, auditor, asesor tributario ni a ningún profesional regulado. Los datos mostrados en el tablero de esta página son ilustrativos y no representan clientes ni resultados reales.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
